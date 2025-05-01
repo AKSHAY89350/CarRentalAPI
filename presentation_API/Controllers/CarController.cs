@@ -15,10 +15,24 @@ namespace presentation_API.Controllers
     public class CarController : ControllerBase
     {
         private readonly ICarService _carService;
-
-        public CarController(ICarService carDetailsService)
+        private readonly ILogger<CarController> _logger;
+        public CarController(ICarService carDetailsService, ILogger<CarController> logger)
         {
             _carService = carDetailsService ?? throw new ArgumentNullException(nameof(carDetailsService));
+            _logger = logger;
+        }
+
+
+        
+
+        [HttpGet("log-example")]
+        public IActionResult Get()
+        {
+            _logger.LogInformation("This is an informational log.");
+            _logger.LogWarning("This is a warning log.");
+            _logger.LogError("This is an error log.");
+
+            return Ok("Check the console for log output.");
         }
 
         [HttpGet("GetAllCarDetails")]

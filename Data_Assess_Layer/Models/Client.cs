@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Data_Assess_Layer.Models
+{
+    public class Client
+    {
+        [Key]
+        public int Id { get; set; }
+        // Unique identifier for the client application.
+        [Required]
+        [MaxLength(100)]
+        public string ClientId { get; set; }
+        // Name of the client application.
+        [Required]
+        [MaxLength(100)]
+        public string Name { get; set; }
+        // URL for the client application.
+        [Required]
+        [MaxLength(200)]
+        public string ClientURL { get; set; }
+    }
+}

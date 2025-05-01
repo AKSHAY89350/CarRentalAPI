@@ -44,7 +44,7 @@ namespace Data_Assess_Layer.Migrations
 
                     b.HasKey("AdminId");
 
-                    b.ToTable("AdminLogins", (string)null);
+                    b.ToTable("AdminLogins");
                 });
 
             modelBuilder.Entity("Data_Assess_Layer.Models.CarDetails", b =>
@@ -78,7 +78,7 @@ namespace Data_Assess_Layer.Migrations
 
                     b.HasKey("Vehicle_Id");
 
-                    b.ToTable("CarDetails", (string)null);
+                    b.ToTable("CarDetails");
                 });
 
             modelBuilder.Entity("Data_Assess_Layer.Models.RentalAgreement", b =>
@@ -113,7 +113,48 @@ namespace Data_Assess_Layer.Migrations
 
                     b.HasIndex("Vehicle_Id");
 
-                    b.ToTable("RentalAgreement", (string)null);
+                    b.ToTable("RentalAgreement");
+                });
+
+            modelBuilder.Entity("Data_Assess_Layer.Models.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Admin Role",
+                            Name = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = " Editor Role",
+                            Name = "Editor"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "User Role",
+                            Name = "User"
+                        });
                 });
 
             modelBuilder.Entity("Data_Assess_Layer.Models.User", b =>
@@ -150,7 +191,54 @@ namespace Data_Assess_Layer.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("User", (string)null);
+                    b.ToTable("User");
+                });
+
+            modelBuilder.Entity("Data_Assess_Layer.Models.UserRole", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("UserRoles");
+                });
+
+            modelBuilder.Entity("Data_Assess_Layer.Models.Users", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Firstname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Lastname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex(new[] { "Email" }, "IX_Unique_Email")
+                        .IsUnique();
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Data_Assess_Layer.Models.RentalAgreement", b =>
@@ -172,14 +260,43 @@ namespace Data_Assess_Layer.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Data_Assess_Layer.Models.UserRole", b =>
+                {
+                    b.HasOne("Data_Assess_Layer.Models.Role", "Role")
+                        .WithMany("UserRoles")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Data_Assess_Layer.Models.Users", "Users")
+                        .WithMany("UserRoles")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+
+                    b.Navigation("Users");
+                });
+
             modelBuilder.Entity("Data_Assess_Layer.Models.CarDetails", b =>
                 {
                     b.Navigation("RentalAgreements");
                 });
 
+            modelBuilder.Entity("Data_Assess_Layer.Models.Role", b =>
+                {
+                    b.Navigation("UserRoles");
+                });
+
             modelBuilder.Entity("Data_Assess_Layer.Models.User", b =>
                 {
                     b.Navigation("RentalAgreements");
+                });
+
+            modelBuilder.Entity("Data_Assess_Layer.Models.Users", b =>
+                {
+                    b.Navigation("UserRoles");
                 });
 #pragma warning restore 612, 618
         }

@@ -80,7 +80,7 @@ namespace Business_Layer
                 _configuration["JWT:ValidIssuer"],
                 _configuration["JWT:ValidAudience"],
                 claims,
-                expires: DateTime.Now.AddHours(1), // Adjust expiration time as needed
+                expires: DateTime.Now.AddHours(1), 
                 signingCredentials: credentials
             );
 

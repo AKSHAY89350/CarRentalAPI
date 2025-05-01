@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akshaykumar10\\OneDrive - Nagarro\\Desktop\\Akshay_Kumar_Batch_01-Mar-2023\\Data_Assess_Layer\\Data_Assess_Layer.csproj": {}
+    "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Data_Assess_Layer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akshaykumar10\\OneDrive - Nagarro\\Desktop\\Akshay_Kumar_Batch_01-Mar-2023\\Data_Assess_Layer\\Data_Assess_Layer.csproj": {
+    "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Data_Assess_Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akshaykumar10\\OneDrive - Nagarro\\Desktop\\Akshay_Kumar_Batch_01-Mar-2023\\Data_Assess_Layer\\Data_Assess_Layer.csproj",
+        "projectUniqueName": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Data_Assess_Layer.csproj",
         "projectName": "Data_Assess_Layer",
-        "projectPath": "C:\\Users\\akshaykumar10\\OneDrive - Nagarro\\Desktop\\Akshay_Kumar_Batch_01-Mar-2023\\Data_Assess_Layer\\Data_Assess_Layer.csproj",
-        "packagesPath": "C:\\Users\\akshaykumar10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akshaykumar10\\OneDrive - Nagarro\\Desktop\\Akshay_Kumar_Batch_01-Mar-2023\\Data_Assess_Layer\\obj\\",
+        "projectPath": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Data_Assess_Layer.csproj",
+        "packagesPath": "C:\\Users\\Akshay Kumar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\akshaykumar10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Akshay Kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net6.0": {
@@ -47,6 +57,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
               "version": "[6.0.0, )"
             },
@@ -71,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
