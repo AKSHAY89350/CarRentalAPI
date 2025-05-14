@@ -250,3 +250,4 @@ C:\Users\Akshay Kumar\OneDrive\Desktop\car rental\CarRentalAPI\presentation_API\
 C:\Users\Akshay Kumar\OneDrive\Desktop\car rental\CarRentalAPI\presentation_API\obj\Debug\net6.0\staticwebassets.build.endpoints.json
 C:\Users\Akshay Kumar\OneDrive\Desktop\car rental\CarRentalAPI\presentation_API\obj\Debug\net6.0\staticwebassets\msbuild.presentation_API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Users\Akshay Kumar\OneDrive\Desktop\car rental\CarRentalAPI\presentation_API\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\Akshay Kumar\OneDrive\Desktop\car rental\CarRentalAPI\presentation_API\obj\Debug\net6.0\presentation_API.MvcApplicationPartsAssemblyInfo.cs

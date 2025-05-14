@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "JWTAuthServer.Controllers.JWKSController",
+    "Method": "GetJWKS",
+    "RelativePath": ".well-known/jwks.json",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "presentation_API.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/auth/login",
@@ -10,6 +20,22 @@
       {
         "Name": "loginDto",
         "Type": "Data_Assess_Layer.DTO.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "presentation_API.Controllers.AuthV2Controller",
+    "Method": "Login",
+    "RelativePath": "api/AuthV2/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "Data_Assess_Layer.DTO.LoginnDTO",
         "IsRequired": true
       }
     ],
@@ -312,6 +338,64 @@
       {
         "Name": "userRegisterDto",
         "Type": "Data_Assess_Layer.DTO.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "presentation_API.Controllers.UserV2Controller",
+    "Method": "getProfile",
+    "RelativePath": "api/UserV2/GetProfile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "presentation_API.Controllers.UserV2Controller",
+    "Method": "getProfileByHeader",
+    "RelativePath": "api/UserV2/GetProfileDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "presentation_API.Controllers.UserV2Controller",
+    "Method": "Register",
+    "RelativePath": "api/UserV2/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDTO",
+        "Type": "Data_Assess_Layer.DTO.RegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "presentation_API.Controllers.UserV2Controller",
+    "Method": "UpadateProfile",
+    "RelativePath": "api/UserV2/UpdateProfile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateProfileDTO",
+        "Type": "Data_Assess_Layer.DTO.UpdateProfileDTO",
         "IsRequired": true
       }
     ],

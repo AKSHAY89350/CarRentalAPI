@@ -20,27 +20,27 @@ builder.Services.AddSwaggerGen(c =>
 
     c.OperationFilter<SecurityRequirementsOperationFilter>();
 });
-// Adding Authentication
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-})// Adding Jwt Bearer
-.AddJwtBearer(options =>
-{
-    options.SaveToken = true;
-    options.RequireHttpsMetadata = false;
-    options.TokenValidationParameters = new TokenValidationParameters()
-    {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidAudience = configuration["JWT:ValidAudience"],
-        ValidIssuer = configuration["JWT:ValidIssuer"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Secret"]))
-    };
-});
-// Add services to the container.
+//Adding Authentication
+//builder.Services.AddAuthentication(options =>
+//{
+//    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+//options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+//options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+//})// Adding Jwt Bearer
+//.AddJwtBearer(options =>
+//{
+//    options.SaveToken = true;
+//    options.RequireHttpsMetadata = false;
+//    options.TokenValidationParameters = new TokenValidationParameters()
+//    {
+//        ValidateIssuer = true,
+//        ValidateAudience = true,
+//        ValidAudience = configuration["JWT:ValidAudience"],
+//        ValidIssuer = configuration["JWT:ValidIssuer"],
+//        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Secret"]))
+//    };
+//});
+//Add services to the container.
 builder.Services.AddCors(c => c.AddPolicy("default", builder => { builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader(); }));
 builder.Services.AddControllers();
 builder.Services.AddDbContext<CarRentalDbContext>(options =>
@@ -63,6 +63,36 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHostedService<KeyRotationService>();
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true, // Ensure the token was issued by a trusted issuer
+        ValidIssuer = builder.Configuration["Jwt:Issuer"], // The expected issuer value from configuration
+        ValidateAudience = false, // Disable audience validation (can be enabled as needed)
+        ValidateLifetime = true, // Ensure the token has not expired
+        ValidateIssuerSigningKey = true, // Ensure the token's signing key is valid
+        // Define a custom IssuerSigningKeyResolver to dynamically retrieve signing keys from the JWKS endpoint
+        IssuerSigningKeyResolver = (token, securityToken, kid, parameters) =>
+        {
+            Console.WriteLine($"Received Token: {token}");
+            Console.WriteLine($"Token Issuer: {securityToken.Issuer}");
+            Console.WriteLine($"Key ID: {kid}");
+            Console.WriteLine($"Validate Lifetime: {parameters.ValidateLifetime}");
+            var httpClient = new HttpClient();
+            var jwks = httpClient.GetStringAsync($"{builder.Configuration["Jwt:Issuer"]}/.well-known/jwks.json").Result; // Parse the fetched JWKS into a JsonWebKeySet object
+            var keys = new JsonWebKeySet(jwks);
+            // Return the collection of JsonWebKey objects for token validation
+            return keys.Keys;
+        }
+    };
+});
 
 
 builder.Logging.ClearProviders();

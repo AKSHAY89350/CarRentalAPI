@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE06DBD8-14C5-443D-9287-2A165F6F4EDB}|Business_Layer\\Business_Layer.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\business_layer\\keyrotationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE06DBD8-14C5-443D-9287-2A165F6F4EDB}|Business_Layer\\Business_Layer.csproj|solutionrelative:business_layer\\keyrotationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\presentation_api\\controllers\\userv2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|solutionrelative:presentation_api\\controllers\\userv2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\presentation_api\\controllers\\authv2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|solutionrelative:presentation_api\\controllers\\authv2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\data_assess_layer\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|solutionrelative:data_assess_layer\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\presentation_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|solutionrelative:presentation_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\data_assess_layer\\dto\\loginndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|solutionrelative:data_assess_layer\\dto\\loginndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\presentation_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|solutionrelative:presentation_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\presentation_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|solutionrelative:presentation_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\presentation_api\\controllers\\jwkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3622591-DA35-4CCF-86A7-5E98B16A25B2}|presentation_API\\presentation_API.csproj|solutionrelative:presentation_api\\controllers\\jwkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\data_assess_layer\\models\\signingkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|solutionrelative:data_assess_layer\\models\\signingkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\data_assess_layer\\carrentaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|solutionrelative:data_assess_layer\\carrentaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\data_assess_layer\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|solutionrelative:data_assess_layer\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\data_assess_layer\\dto\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|solutionrelative:data_assess_layer\\dto\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\data_assess_layer\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|solutionrelative:data_assess_layer\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\data_assess_layer\\migrations\\20250429093206_add new auth method model .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|solutionrelative:data_assess_layer\\migrations\\20250429093206_add new auth method model .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\data_assess_layer\\migrations\\20241107124642_modification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|solutionrelative:data_assess_layer\\migrations\\20241107124642_modification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|c:\\users\\akshay kumar\\onedrive\\desktop\\car rental\\carrentalapi\\data_assess_layer\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D7B0E6-597E-4499-BC17-A39AB38579A7}|Data_Assess_Layer\\Data_Assess_Layer.csproj|solutionrelative:data_assess_layer\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,114 +50,132 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "Data_Assess_Layer\\Models\\Client.cs",
-              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Models\\Client.cs",
-              "RelativeToolTip": "Data_Assess_Layer\\Models\\Client.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Data_Assess_Layer\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Models\\Users.cs",
+              "RelativeToolTip": "Data_Assess_Layer\\Models\\Users.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T11:57:43.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SigningKey.cs",
-              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Models\\SigningKey.cs",
-              "RelativeDocumentMoniker": "Data_Assess_Layer\\Models\\SigningKey.cs",
-              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Models\\SigningKey.cs",
-              "RelativeToolTip": "Data_Assess_Layer\\Models\\SigningKey.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA0wB0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T11:56:13.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "KeyRotationService.cs",
-              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Business_Layer\\KeyRotationService.cs",
-              "RelativeDocumentMoniker": "Business_Layer\\KeyRotationService.cs",
-              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Business_Layer\\KeyRotationService.cs",
-              "RelativeToolTip": "Business_Layer\\KeyRotationService.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAMwDQAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T11:46:06.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateProfileDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\DTO\\UpdateProfileDTO.cs",
-              "RelativeDocumentMoniker": "Data_Assess_Layer\\DTO\\UpdateProfileDTO.cs",
-              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\DTO\\UpdateProfileDTO.cs",
-              "RelativeToolTip": "Data_Assess_Layer\\DTO\\UpdateProfileDTO.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAmwBQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T09:34:32.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\DTO\\RegisterDTO.cs",
-              "RelativeDocumentMoniker": "Data_Assess_Layer\\DTO\\RegisterDTO.cs",
-              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\DTO\\RegisterDTO.cs",
-              "RelativeToolTip": "Data_Assess_Layer\\DTO\\RegisterDTO.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwAsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T09:33:01.173Z",
+              "WhenOpened": "2025-05-14T11:38:20.42Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "20250429093206_Add new Auth method model .cs",
-              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Migrations\\20250429093206_Add new Auth method model .cs",
-              "RelativeDocumentMoniker": "Data_Assess_Layer\\Migrations\\20250429093206_Add new Auth method model .cs",
-              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Migrations\\20250429093206_Add new Auth method model .cs",
-              "RelativeToolTip": "Data_Assess_Layer\\Migrations\\20250429093206_Add new Auth method model .cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T09:32:06.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CarRentalDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\CarRentalDbContext.cs",
-              "RelativeDocumentMoniker": "Data_Assess_Layer\\CarRentalDbContext.cs",
-              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\CarRentalDbContext.cs",
-              "RelativeToolTip": "Data_Assess_Layer\\CarRentalDbContext.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAAABsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T09:23:19.602Z",
-              "EditorCaption": ""
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\appsettings.json",
+              "RelativeDocumentMoniker": "presentation_API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\appsettings.json",
+              "RelativeToolTip": "presentation_API\\appsettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-12T15:35:50.436Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "20241107124642_modification.cs",
-              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Migrations\\20241107124642_modification.cs",
-              "RelativeDocumentMoniker": "Data_Assess_Layer\\Migrations\\20241107124642_modification.cs",
-              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Migrations\\20241107124642_modification.cs",
-              "RelativeToolTip": "Data_Assess_Layer\\Migrations\\20241107124642_modification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "JWKSController.cs",
+              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\Controllers\\JWKSController.cs",
+              "RelativeDocumentMoniker": "presentation_API\\Controllers\\JWKSController.cs",
+              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\Controllers\\JWKSController.cs",
+              "RelativeToolTip": "presentation_API\\Controllers\\JWKSController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwAEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:46:43.631Z",
+              "WhenOpened": "2025-05-12T15:33:42.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SigningKey.cs",
+              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Models\\SigningKey.cs",
+              "RelativeDocumentMoniker": "Data_Assess_Layer\\Models\\SigningKey.cs",
+              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Models\\SigningKey.cs",
+              "RelativeToolTip": "Data_Assess_Layer\\Models\\SigningKey.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA3wBEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:41:14.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\Program.cs",
+              "RelativeDocumentMoniker": "presentation_API\\Program.cs",
+              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\Program.cs",
+              "RelativeToolTip": "presentation_API\\Program.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAASwFgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:03:41.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginnDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\DTO\\LoginnDTO.cs",
+              "RelativeDocumentMoniker": "Data_Assess_Layer\\DTO\\LoginnDTO.cs",
+              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\DTO\\LoginnDTO.cs",
+              "RelativeToolTip": "Data_Assess_Layer\\DTO\\LoginnDTO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T12:03:06.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthV2Controller.cs",
+              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\Controllers\\AuthV2Controller.cs",
+              "RelativeDocumentMoniker": "presentation_API\\Controllers\\AuthV2Controller.cs",
+              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\Controllers\\AuthV2Controller.cs",
+              "RelativeToolTip": "presentation_API\\Controllers\\AuthV2Controller.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAvwFYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T11:49:26.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "presentation_API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "presentation_API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T11:47:57.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Data_Assess_Layer\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\Data_Assess_Layer\\Models\\Role.cs",
+              "RelativeToolTip": "Data_Assess_Layer\\Models\\Role.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T10:08:04.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserV2Controller.cs",
+              "DocumentMoniker": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\Controllers\\UserV2Controller.cs",
+              "RelativeDocumentMoniker": "presentation_API\\Controllers\\UserV2Controller.cs",
+              "ToolTip": "C:\\Users\\Akshay Kumar\\OneDrive\\Desktop\\car rental\\CarRentalAPI\\presentation_API\\Controllers\\UserV2Controller.cs",
+              "RelativeToolTip": "presentation_API\\Controllers\\UserV2Controller.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAQwK8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T12:53:50.927Z",
               "EditorCaption": ""
             }
           ]
