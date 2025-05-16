@@ -10,7 +10,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business_Layer
+namespace Business_Layer.Service
 {
     public class KeyRotationService : BackgroundService
     {

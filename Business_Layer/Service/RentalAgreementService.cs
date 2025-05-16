@@ -1,4 +1,5 @@
-﻿using Data_Assess_Layer;
+﻿using Business_Layer.Interface;
+using Data_Assess_Layer;
 using Data_Assess_Layer.DTO;
 using Data_Assess_Layer.Models;
 using Microsoft.EntityFrameworkCore;
@@ -8,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business_Layer
+namespace Business_Layer.Service
 {
     public class RentalAgreementService : IRentalAgreementService
     {

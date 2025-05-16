@@ -10,22 +10,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "presentation_API.Controllers.AuthController",
-    "Method": "Login",
-    "RelativePath": "api/auth/login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "loginDto",
-        "Type": "Data_Assess_Layer.DTO.LoginDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "presentation_API.Controllers.AuthV2Controller",
     "Method": "Login",
     "RelativePath": "api/AuthV2/Login",
@@ -151,16 +135,48 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "presentation_API.Controllers.RentalAgreementsController",
-    "Method": "GetRentalAgreements",
-    "RelativePath": "api/RentalAgreements",
+    "ContainingType": "ResourceServer.Controllers.ProductsController",
+    "Method": "AddProduct",
+    "RelativePath": "api/Products/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "ResourceServer.Models.Product",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ResourceServer.Controllers.ProductsController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/Products/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ResourceServer.Controllers.ProductsController",
+    "Method": "GetAllProduct",
+    "RelativePath": "api/Products/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Data_Assess_Layer.DTO.RentalAgreementDto, Data_Assess_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[ResourceServer.Models.Product, Data_Assess_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -171,22 +187,22 @@
     ]
   },
   {
-    "ContainingType": "presentation_API.Controllers.RentalAgreementsController",
-    "Method": "CreateRentalAgreementAsync",
-    "RelativePath": "api/RentalAgreements",
-    "HttpMethod": "POST",
+    "ContainingType": "ResourceServer.Controllers.ProductsController",
+    "Method": "GetProductById",
+    "RelativePath": "api/Products/GetById/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "rentalAgreementDTO",
-        "Type": "Data_Assess_Layer.DTO.RentalAgreementDto",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Data_Assess_Layer.DTO.RentalAgreementDto",
+        "Type": "ResourceServer.Models.Product",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -194,12 +210,13 @@
         ],
         "StatusCode": 200
       }
-    ]
+    ],
+    "EndpointName": "GetProductById"
   },
   {
-    "ContainingType": "presentation_API.Controllers.RentalAgreementsController",
-    "Method": "EditCarRentalAgreement",
-    "RelativePath": "api/RentalAgreements/{id}",
+    "ContainingType": "ResourceServer.Controllers.ProductsController",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/Products/Update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -210,12 +227,32 @@
         "IsRequired": true
       },
       {
-        "Name": "updatedRentalAgreementDTO",
-        "Type": "Data_Assess_Layer.DTO.RentalAgreementDto",
+        "Name": "updatedProduct",
+        "Type": "ResourceServer.Models.Product",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "presentation_API.Controllers.RentalAgreementsController",
+    "Method": "GetRentalAgreements",
+    "RelativePath": "api/RentalAgreements",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Data_Assess_Layer.DTO.RentalAgreementDto, presentation_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "presentation_API.Controllers.RentalAgreementsController",
@@ -259,7 +296,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Data_Assess_Layer.DTO.RentalAgreementDto, Data_Assess_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Data_Assess_Layer.DTO.RentalAgreementDto, presentation_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -301,7 +338,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Data_Assess_Layer.DTO.RentalAgreementDto, Data_Assess_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Data_Assess_Layer.DTO.RentalAgreementDto, presentation_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -310,38 +347,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "presentation_API.Controllers.UserController",
-    "Method": "Login",
-    "RelativePath": "api/User/LoginUser",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userLoginDto",
-        "Type": "Data_Assess_Layer.DTO.NewLoginDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "presentation_API.Controllers.UserController",
-    "Method": "Register",
-    "RelativePath": "api/User/RegisterUser",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userRegisterDto",
-        "Type": "Data_Assess_Layer.DTO.UserDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "presentation_API.Controllers.UserV2Controller",

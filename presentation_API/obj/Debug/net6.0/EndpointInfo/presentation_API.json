@@ -5,37 +5,6 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/auth/login": {
-      "post": {
-        "tags": [
-          "Auth"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
     "/api/AuthV2/Login": {
       "post": {
         "tags": [
@@ -265,6 +234,236 @@
         }
       }
     },
+    "/api/Products/GetAll": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Product"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Product"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Product"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "security": [
+          {
+            "oauth2": [ ]
+          }
+        ]
+      }
+    },
+    "/api/Products/GetById/{id}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "operationId": "GetProductById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "security": [
+          {
+            "oauth2": [ ]
+          }
+        ]
+      }
+    },
+    "/api/Products/Add": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "security": [
+          {
+            "oauth2": [ ]
+          }
+        ]
+      }
+    },
+    "/api/Products/Update/{id}": {
+      "put": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "security": [
+          {
+            "oauth2": [ ]
+          }
+        ]
+      }
+    },
+    "/api/Products/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "security": [
+          {
+            "oauth2": [ ]
+          }
+        ]
+      }
+    },
     "/api/RentalAgreements": {
       "get": {
         "tags": [
@@ -296,52 +495,6 @@
                   "items": {
                     "$ref": "#/components/schemas/RentalAgreementDto"
                   }
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "RentalAgreements"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RentalAgreementDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RentalAgreementDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RentalAgreementDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/RentalAgreementDto"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/RentalAgreementDto"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/RentalAgreementDto"
                 }
               }
             }
@@ -510,110 +663,6 @@
         }
       }
     },
-    "/api/RentalAgreements/{id}": {
-      "put": {
-        "tags": [
-          "RentalAgreements"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RentalAgreementDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RentalAgreementDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RentalAgreementDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/User/LoginUser": {
-      "post": {
-        "tags": [
-          "User"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewLoginDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewLoginDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewLoginDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/User/RegisterUser": {
-      "post": {
-        "tags": [
-          "User"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
     "/api/UserV2/Register": {
       "post": {
         "tags": [
@@ -714,52 +763,34 @@
     "schemas": {
       "CarDetails": {
         "required": [
-          "availability_status",
-          "maker",
-          "model",
-          "rental_Price"
+          "Availability_status",
+          "Maker",
+          "Model",
+          "Rental_Price"
         ],
         "type": "object",
         "properties": {
-          "vehicle_Id": {
+          "Vehicle_Id": {
             "type": "integer",
             "format": "int32"
           },
-          "maker": {
+          "Maker": {
             "maxLength": 100,
             "type": "string"
           },
-          "model": {
+          "Model": {
             "maxLength": 100,
             "type": "string"
           },
-          "rental_Price": {
+          "Rental_Price": {
             "minimum": 0.01,
             "type": "number",
             "format": "double"
           },
-          "availability_status": {
+          "Availability_status": {
             "type": "string"
           },
-          "image_Link": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "LoginDto": {
-        "type": "object",
-        "properties": {
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
-          },
-          "role": {
+          "Image_Link": {
             "type": "string",
             "nullable": true
           }
@@ -768,65 +799,80 @@
       },
       "LoginnDTO": {
         "required": [
-          "clientId",
-          "email",
-          "password"
+          "ClientId",
+          "Email",
+          "Password"
         ],
         "type": "object",
         "properties": {
-          "email": {
+          "Email": {
             "maxLength": 100,
             "type": "string",
             "format": "email"
           },
-          "password": {
+          "Password": {
             "maxLength": 100,
             "minLength": 6,
             "type": "string"
           },
-          "clientId": {
+          "ClientId": {
             "type": "string"
           }
         },
         "additionalProperties": false
       },
-      "NewLoginDto": {
+      "Product": {
+        "required": [
+          "Name"
+        ],
         "type": "object",
         "properties": {
-          "email": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "Description": {
+            "maxLength": 500,
+            "minLength": 0,
             "type": "string",
             "nullable": true
           },
-          "password": {
-            "type": "string",
-            "nullable": true
+          "Price": {
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false
       },
       "RegisterDTO": {
         "required": [
-          "email",
-          "firstname",
-          "password"
+          "Email",
+          "Firstname",
+          "Password"
         ],
         "type": "object",
         "properties": {
-          "firstname": {
+          "Firstname": {
             "maxLength": 50,
             "type": "string"
           },
-          "lastname": {
+          "Lastname": {
             "maxLength": 50,
             "type": "string",
             "nullable": true
           },
-          "email": {
+          "Email": {
             "maxLength": 100,
             "type": "string",
             "format": "email"
           },
-          "password": {
+          "Password": {
             "maxLength": 100,
             "minLength": 6,
             "type": "string"
@@ -837,31 +883,31 @@
       "RentalAgreementDto": {
         "type": "object",
         "properties": {
-          "rentalAgreementId": {
+          "RentalAgreementId": {
             "type": "integer",
             "format": "int32"
           },
-          "userId": {
+          "UserId": {
             "type": "integer",
             "format": "int32"
           },
-          "vehicle_Id": {
+          "Vehicle_Id": {
             "type": "integer",
             "format": "int32"
           },
-          "bookingDate": {
+          "BookingDate": {
             "type": "string",
             "format": "date-time"
           },
-          "returnDate": {
+          "ReturnDate": {
             "type": "string",
             "format": "date-time"
           },
-          "isReturned": {
+          "IsReturned": {
             "type": "string",
             "nullable": true
           },
-          "requestForReturn": {
+          "RequestForReturn": {
             "type": "string",
             "nullable": true
           }
@@ -871,59 +917,25 @@
       "UpdateProfileDTO": {
         "type": "object",
         "properties": {
-          "firstname": {
+          "Firstname": {
             "maxLength": 50,
             "type": "string",
             "nullable": true
           },
-          "lastname": {
+          "Lastname": {
             "maxLength": 50,
             "type": "string",
             "nullable": true
           },
-          "email": {
+          "Email": {
             "maxLength": 100,
             "type": "string",
             "format": "email",
             "nullable": true
           },
-          "password": {
+          "Password": {
             "maxLength": 100,
             "minLength": 6,
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "UserDto": {
-        "type": "object",
-        "properties": {
-          "userId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "phoneNumber": {
-            "type": "string",
-            "nullable": true
-          },
-          "address": {
-            "type": "string",
-            "nullable": true
-          },
-          "role": {
             "type": "string",
             "nullable": true
           }

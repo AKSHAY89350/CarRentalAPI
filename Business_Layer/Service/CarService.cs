@@ -1,10 +1,10 @@
-﻿using Data_Assess_Layer;
-using Data_Assess_Layer.DTO;
+﻿using Business_Layer.Interface;
+using Data_Assess_Layer;
 using Data_Assess_Layer.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Business_Layer
+namespace Business_Layer.Service
 {
     public class CarService : ICarService
     {

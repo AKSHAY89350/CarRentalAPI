@@ -1,4 +1,5 @@
-﻿using Data_Assess_Layer.DTO;
+﻿using Business_Layer.Interface;
+using Data_Assess_Layer.DTO;
 using Data_Assess_Layer.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -10,7 +11,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business_Layer
+namespace Business_Layer.Service
 {
     public class UserAuthentication: IUserAuthentication
     {

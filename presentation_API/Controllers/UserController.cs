@@ -1,4 +1,4 @@
-﻿using Business_Layer;
+﻿using Business_Layer.Interface;
 using Data_Assess_Layer.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,31 +17,31 @@ namespace presentation_API.Controllers
                 _userAuthentication = userAuthentication;
             }
 
-            [HttpPost("LoginUser")]
-            public async Task<IActionResult> Login([FromBody] NewLoginDto userLoginDto)
-            {
-                var token = await _userAuthentication.AuthenticateAsync(userLoginDto);
+            //[HttpPost("LoginUser")]
+            //public async Task<IActionResult> Login([FromBody] NewLoginDto userLoginDto)
+            //{
+            //    var token = await _userAuthentication.AuthenticateAsync(userLoginDto);
 
-                if (token == null)
-                {
-                    return Unauthorized("Invalid email or password.");
-                }
+            //    if (token == null)
+            //    {
+            //        return Unauthorized("Invalid email or password.");
+            //    }
 
-                return Ok(new { Token = token });
-            }
+            //    return Ok(new { Token = token });
+            //}
 
-            [HttpPost("RegisterUser")]
-            public async Task<IActionResult> Register([FromBody] UserDto userRegisterDto)
-            {
-                var token = await _userAuthentication.RegisterAsync(userRegisterDto);
+            //[HttpPost("RegisterUser")]
+            //public async Task<IActionResult> Register([FromBody] UserDto userRegisterDto)
+            //{
+            //    var token = await _userAuthentication.RegisterAsync(userRegisterDto);
 
-                if (token == null)
-                {
-                    return BadRequest("User registration failed.");
-                }
+            //    if (token == null)
+            //    {
+            //        return BadRequest("User registration failed.");
+            //    }
 
-                return Ok(new { Token = token });
-            }
+            //    return Ok(new { Token = token });
+            //}
 
 
         }

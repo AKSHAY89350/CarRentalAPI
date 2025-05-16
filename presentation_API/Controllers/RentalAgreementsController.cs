@@ -1,4 +1,4 @@
-﻿using Business_Layer;
+﻿using Business_Layer.Interface;
 using Data_Assess_Layer;
 using Data_Assess_Layer.DTO;
 using Data_Assess_Layer.Models;
@@ -83,6 +83,8 @@ namespace presentation_API.Controllers
             try
             {
                 var rentalAgreements = await _service.GetRentalAgreementsByVehicle_IdAsync(vehicleId);
+                if (rentalAgreements == null)
+                    return NotFound();
                 return Ok(rentalAgreements);
             }
             catch (Exception ex)
@@ -110,45 +112,45 @@ namespace presentation_API.Controllers
             }
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> EditCarRentalAgreement(int id, RentalAgreementDto updatedRentalAgreementDTO)
-        {
-            try
-            {
-                var edited = await _service.EditRentalAgreementAsync(id, updatedRentalAgreementDTO);
+        //[HttpPut("{id}")]
+        //public async Task<IActionResult> EditCarRentalAgreement(int id, RentalAgreementDto updatedRentalAgreementDTO)
+        //{
+        //    try
+        //    {
+        //        var edited = await _service.EditRentalAgreementAsync(id, updatedRentalAgreementDTO);
 
-                if (!edited)
-                {
-                    return NotFound();
-                }
+        //        if (!edited)
+        //        {
+        //            return NotFound();
+        //        }
 
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
-            }
-        }
+        //        return NoContent();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
+        //    }
+        //}
 
-        [HttpPost]
-        public async Task<ActionResult<RentalAgreementDto>> CreateRentalAgreementAsync(RentalAgreementDto rentalAgreementDTO)
-        {
-            try
-            {
-                var createdRentalAgreement = await _service.CreateRentalAgreementAsync(rentalAgreementDTO);
+        //[HttpPost]
+        //public async Task<ActionResult<RentalAgreementDto>> CreateRentalAgreementAsync(RentalAgreementDto rentalAgreementDTO)
+        //{
+        //    try
+        //    {
+        //        var createdRentalAgreement = await _service.CreateRentalAgreementAsync(rentalAgreementDTO);
 
-                if (createdRentalAgreement == null)
-                {
-                    return BadRequest();
-                }
+        //        if (createdRentalAgreement == null)
+        //        {
+        //            return BadRequest();
+        //        }
 
-                return Ok(createdRentalAgreement);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
-            }
-        }
+        //        return Ok(createdRentalAgreement);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
+        //    }
+        //}
 
        }
 }

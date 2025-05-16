@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business_Layer
+namespace Business_Layer.Interface
 {
     public interface IRentalAgreementService
     {
