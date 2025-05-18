@@ -1,2 +1,7 @@
 .vs/
-presentation_API\bin/
+presentation_API/bin/
+Data_Assess_Layer/bin/
+Business_Layer/bin/
+# Ignore all bin and obj folders across all layers
+**/bin/
+**/obj/
